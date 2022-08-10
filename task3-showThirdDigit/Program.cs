@@ -16,7 +16,7 @@ else if (userNumber > 999)
  {
     while(userNumber > 999)
     userNumber = userNumber / 10;
-    Console.WriteLine($"Третье число - {userNumber % 10}");
+    Console.WriteLine($"Третье число - {userNumber % 10}.");
  }
 else 
 {
