@@ -10,14 +10,15 @@ int userNumber = int.Parse(Console.ReadLine()!);
 if((userNumber / 100 > 0) && (userNumber / 1000 == 0))
 {
     int thirdDigit = userNumber % 10;
-    Console.WriteLine (thirdDigit);
+    Console.Write($"3я цифра - {thirdDigit}");
 }
+else if (userNumber > 999)
+ {
+    while(userNumber > 999)
+    userNumber = userNumber / 10;
+    Console.WriteLine($"Третье число - {userNumber % 10}");
+ }
 else 
 {
-    while(userNumber.Lenght > 3) // тут неправильно! как сделать? 
-        userNumber = userNumber / 10;
-
-    Console.Write("Число не трехзначное! Попробуйте снова...");
+    Console.Write("Число не трехзначное! Второго числа нет. Попробуйте снова...");
 }
-
-// Как составить цикл с проверкой до трехзначного?
