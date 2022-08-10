@@ -5,7 +5,7 @@
 
 
 Console.WriteLine("Введите число: ");
-int userNumber = int.Parse(Console.ReadLine()!); 
+int userNumber = int.Parse(Console.ReadLine()!);
 
 if((userNumber / 100 > 0) && (userNumber / 1000 == 0))
 {
